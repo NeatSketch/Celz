@@ -8,6 +8,7 @@ public class Settings : MonoBehaviour
     public static Settings Instance { get { return instance; } }
 
     public float lifetickTime = 1f;
+    public int basicCellEnergyCost = 5;
 
     private void Awake()
     {
