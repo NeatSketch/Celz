@@ -35,8 +35,15 @@ public class Cell : MonoBehaviour, IPointerClickHandler, IPointerDownHandler, IB
         if (!rectTransform) rectTransform = GetComponent<RectTransform>();
     }
 
+    protected virtual void OnDestroy()
+    {
+        GameManager.Instance.UnregisterCell(this);
+    }
+
     protected virtual void Start()
     {
+        GameManager.Instance.RegisterCell(this);
+
         StartCoroutine(LifeTicker_Routine());
     }
 

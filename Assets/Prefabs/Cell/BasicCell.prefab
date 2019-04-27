@@ -70,7 +70,7 @@ MonoBehaviour:
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 17
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 1}
+  m_Color: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -169,11 +169,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placed: 0
+  createPrice: 10
   startEnergyAmount: 15
-  cellAnimator: {fileID: 8256972402839462528}
   energyCountText: {fileID: 1736104275775384413}
-  energyConsumptionPerTick: 1
-  cellChooserMenu: {fileID: 0}
+  energyConsumptionPerTick: 0
   capacity: 100
   currentEnergy: []
 --- !u!95 &8256972402839462528

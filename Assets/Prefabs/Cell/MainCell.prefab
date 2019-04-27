@@ -106,7 +106,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4468363087785716915}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.95593506, b: 0.3537736, a: 1}
+  m_Color: {r: 1, g: 0.95593506, b: 0.3537736, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -188,10 +188,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placed: 1
+  createPrice: 10
   startEnergyAmount: 100
-  cellAnimator: {fileID: 5215376341215071576}
   energyCountText: {fileID: 2513558497032537221}
-  energyConsumptionPerTick: 1
-  cellChooserMenu: {fileID: 0}
+  energyConsumptionPerTick: 0
   capacity: 100
   currentEnergy: []

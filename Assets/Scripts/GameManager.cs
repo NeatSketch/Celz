@@ -60,4 +60,35 @@ public class GameManager : MonoBehaviour
 
         return linkObject;
     }
+
+    Dictionary<Cell, RectTransform> metaballRects = new Dictionary<Cell, RectTransform>();
+
+    public RectTransform metaballImagePrefab;
+    public RectTransform metaballCanvas;
+
+    public void RegisterCell(Cell cell)
+    {
+        RectTransform metaballImage = (RectTransform)Instantiate(metaballImagePrefab, metaballCanvas).transform;
+
+        metaballRects.Add(cell, metaballImage);
+    }
+
+    public void UnregisterCell(Cell cell)
+    {
+        Destroy(metaballRects[cell]);
+        metaballRects.Remove(cell);
+    }
+
+    void UpdateMetaballImages()
+    {
+        foreach (var mtImage in metaballRects)
+        {
+            mtImage.Value.localPosition = mtImage.Key.transform.localPosition;
+        }
+    }
+
+    private void Update()
+    {
+        UpdateMetaballImages();
+    }
 }
